@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrayMe App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1>PrayMe App</h1>
+        <p>Выберите категорию и зажгите свечу за своё желание!</p>
+        <div class="categories">
+            <button class="category-btn" onclick="lightCandle('Любовь')">Любовь</button>
+            <button class="category-btn" onclick="lightCandle('Здоровье')">Здоровье</button>
+            <button class="category-btn" onclick="lightCandle('Успех')">Успех</button>
+        </div>
+        <p>Или напишите своё желание:</p>
+        <div class="custom-desire">
+            <input type="text" id="custom-desire-input" placeholder="Введите ваше желание..." />
+            <button class="category-btn" onclick="lightCustomCandle()">Зажечь свечу</button>
+        </div>
+        <div id="candle-animation" class="candle-animation hidden">
+            <img src="https://cdn-icons-png.flaticon.com/512/2917/2917242.png" alt="Свеча" />
+        </div>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
